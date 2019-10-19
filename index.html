@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ItuneAPI</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <div class="navbar-header">
+                <p class="navbar-brand">ItunesAPI</p>
+            </div>
+            <label  class="form-inline my-2 my-lg-0">
+               <input class="form-control search" type="text" onblur="fetch();" placeholder="Search for a song">             
+            </label>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center typed">
+            <div class="col-lg-8 text-center">
+                <h2 class=" mt-0">What are you looking for?</h2>
+                <hr class="divider light my-4">
+                <div id="animation">
+                        <p>A <strong>song</strong></p>
+                        <p>Don't waste your time</p>
+                        <p>Type on the search bar above and ...</p>
+                        <p>Enjoy <strong>it!</strong> =)</p>
+                   </div>
+                   <span id="typed"></span>
+            </div>
+        </div>        
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+                <div class="results">
+        </div>
+    </div>
+
+           
+       
+    <script src="Javascript/bootstrap.min.js"></script>
+    <script src="Javascript/jquery.min.js"></script>
+    <script src="Javascript/script.js"></script>
+    <script src="Javascript/typed.js"></script>
+   
+    <script>
+            $(document).ready(function(){
+                var typed = new Typed('#typed',{
+                stringsElement: '#animation',
+                backSpeed: 40,
+                typeSpeed:80,
+                loop: false,
+                backDelay: 200
+                });
+            });   
+       
+    
+     </script> 
+</body>
+</html>
